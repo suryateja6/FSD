@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-image:url("https://media.istockphoto.com/id/863607936/photo/to-do-list-on-note-pad-with-coffee-and-pen-on-office-desk.jpg?s=612x612&w=0&k=20&c=3ZpVRcBI9oGdPty0agkNlqzrAI3AnvjgpRdtDrjvHqI=");
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: firebrick;
+
+}
+
+#task-input {
+  flex-grow: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align:center;
+
+}
+
+#add-task-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white ;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#task-list {
+ 
+  padding: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: violet;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.task-item input[type="text"] {
+  flex-grow: auto;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color:blue;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
