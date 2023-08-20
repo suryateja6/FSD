@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ChatGPT Webinar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-image:url("https://www.cvent.com/sites/default/files/image/2022-02/webinars_news_0.jpg");
+            opacity: 50;
+        }
+        .header {
+             color: white;  
+            text-align: center;
+            padding: 10px;
+            border-radius:10px;
+          }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            opacity:600;
+                   
+        }
+        .event-details {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .event-details h2 {
+            color: #0a3c8c;
+        }
+        .event-details p {
+            font-size: 18px;
+        }
+        .registration-form {
+            text-align: center;
+            margin-top: 20px;
+        
+        }
+        .registration-form input {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+            
+            border-radius: 15px;
+        }
+        .registration-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius:20px;
+        }
+        .agenda {
+        background-color: #F5F5F5;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .agenda h2 {
+        color: #0a3c8c;
+        margin-bottom: 10px;
+    }
+
+    .agenda ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+    .agenda li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .agenda li:before {
+        content: "➜";
+        margin-right: 10px;
+        color: #007BFF;
+    }
+    .speakers {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .speakers h2 {
+        color: #0a3c8c;
+        margin-bottom: 10px;
+    }
+
+    .speaker {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .speaker img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    .speaker h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .speaker p {
+        font-size: 18px;
+        color: #555;
+    }
+   
+   
+    .faqs {
+       
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .faqs h2 {
+        color: #0a3c8c;
+        margin-bottom: 20px;
+    }
+
+    .faq {
+        margin-bottom: 20px;
+        border-left: 4px solid #007BFF;
+        padding-left: 15px;
+        transition: border-left-color 0.3s ease-in-out;
+    }
+
+    .faq h3 {
+        font-size: 15px;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .faq p {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #555;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .faq.active h3 {
+        color: #0a3c8c;
+    }
+
+    .faq.active p {
+        max-height: 100px; /* Adjust as needed */
+        opacity: 40;
+    }
+
+    .faq-button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .faq-button:hover {
+        background-color: #0058A9;
+    }
+    .webinar-heading {
+            text-align: center;
+            margin-top: 50px;
+            animation: rainbow 5s linear infinite, scale 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes rainbow {
+            0% { color: #FF0000; }
+            14% { color: #FF7F00; }
+            28% { color: #FFFF00; }
+            42% { color: #00FF00; }
+            57% { color: #0000FF; }
+            71% { color: #4B0082; }
+            85% { color: #8A2BE2; }
+            100% { color: #FF0000; }
+        }
+
+        @keyframes scale {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="webinar-heading">ChatGPT Webinar</h1>
+      
+</body>
+        
+    </div>
+    <div class="content">
+        <div class="event-details">
+            <h2 >Webinar Theme     </h2>
+            <p>ChatGPT: Unleashing Engineers’ Career Growth</p>
+            <h2>Date and Time</h2>
+            <p>31st August 2023 at 11:00 AM</p>
+            <h2>Duration</h2>
+            <p>50 minutes</p>
+        </div>
+        
+        <div class="agenda">
+            <h2>Agenda</h2>
+            <ul>
+                <li>Introduction to ChatGPT and its Applications</li>
+                <li>Exploring the Technical Underpinnings of ChatGPT</li>
+                <li>Real-world Use Cases and Success Stories</li>
+                <li>Q&A Session with ChatGPT Experts</li>
+            </ul>
+        </div>
+        <div class="speakers">
+    <h2>Speakers</h2>
+    <div class="speaker">
+        <img src="data:image/jpeg;base64,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" alt="Dr. Jane Smith">
+        <div class="speaker-details">
+            <h3>Dr. Jane Smith</h3>
+            <p>Lead AI Researcher at OpenAI</p>
+        </div>
+    </div>
+    <div class="speaker">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/John_Doe%2C_born_John_Nommensen_Duchac.jpg" alt="John Doe">
+        <div class="speaker-details">
+            <h3>John Doe</h3>
+            <p>Senior Software Engineer</p>
+        </div>
+    </div>
+</div>
+        
+        <div class="registration-form" action="process.php" method="post">
+            <h2>Webinar Registration</h2>
+            <form id="registration-form">
+                <input type="text" placeholder="Full Name" name="fullName" required><br>
+                <input type="email" placeholder="Email" name="email" required><br>
+                <input type="text" placeholder="College/University" name="college" required><br>
+                <input type="number" placeholder="Year of Study" name="yearOfStudy" required><br>
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+        <div class="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h3>Is the webinar free to attend?</h3>
+                <p>Yes, the webinar is completely free for all attendees.</p>
+            </div>
+            <div class="faq">
+                <h3>Will the webinar be recorded?</h3>
+                <p>Yes, the webinar will be recorded, and the recording will be made available to registered participants after the event.</p>
+            </div>
+        
+        </div>
+        <div class="section">
+   
+</div>
+    </div>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq');
+
+        faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+    </script>
+    <footer style="background-color:none; color: white; text-align: center; padding: 0px;">
+        <p>&copy; 2023 ChatGPT Webinar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
